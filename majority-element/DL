@@ -1,0 +1,9 @@
+class Solution {
+public:
+    int majorityElement(vector<int>& nums) {
+        std::sort(nums.cbegin() , nums.cend());
+        auto n = nums.size();
+        return nums[n/2];
+        
+    }
+};
